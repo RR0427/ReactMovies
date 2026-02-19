@@ -45,6 +45,9 @@
   }
 }
 
-.movies-grid > * {
-  animation: fadeIn 0.3s ease-out forwards;
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
+  gap: 1.5rem;
+  justify-content: center; /* ⭐ this centers the cards */
 }
