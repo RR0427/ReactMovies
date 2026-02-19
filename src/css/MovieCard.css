@@ -62,11 +62,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s;
+  transition: all 0.2s ease;
+  border: none; /* ✅ important */
+  cursor: pointer; /* ✅ nice UX */
+  overflow: hidden; /* ✅ prevents square bleed */
 }
 
 .favorite-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(14, 10, 10, 0.8);
 }
 
 .favorite-btn.active {
